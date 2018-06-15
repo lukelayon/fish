@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Menu </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+var Menu_text = new sjs.Text("Menu", 28 "blue");
+Menu_text.centerH();
+
+game_text = new sjs.Text("Use the Arrow Keys to Control the Player. Only eat enemies smaller than you!",28,"#ff0");
+game_text.centerH().offset(0,30);
+var startBtn = new sjs.buttom("Start", function(){
+	window.location = "fich.html";
+	var info_text = new sjs.Text("Created By Forbbidin Aura Studios", 20, "blue");
+
+	info_text.bottom().centerH();
+
+	});
+
+	startBtn.center();
+
+} //End Start
+
+</script>
+</head>
+<body onload="start()">
+<h1> Fish </h1>
+
+<div id="target" style="margin:auto;background:grey;"></div>
+</body>
+</html>
